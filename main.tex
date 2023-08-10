@@ -1,10 +1,10 @@
 %------------------------
 % Resume Template
 % Author : JAYABRATA PRAMANIK
-% Github : https://github.com/Jayabrata18
+% Github : https://github.com/Jayabrata18/resume
 % License : MIT
 %------------------------
-\documentclass[a4paper,50pt]{article}
+\documentclass[a4paper,11pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -25,11 +25,7 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.530in}
-\addtolength{\evensidemargin}{-0.375in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.45in}
-\addtolength{\textheight}{1in}
+\usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry}
 
 \urlstyle{rm}
 
@@ -64,12 +60,11 @@
     \end{tabular*}\vspace{-5pt}
 }
 
-
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[left-margin=2pt]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=15pt]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
@@ -81,73 +76,63 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\LARGE Jayabrata Pramanik}} & Email: \href{mailto:}{jayabrata180402@gmail.com}\\
+  \textbf{{\LARGE Jayabrata Pramanik}} & Email: \href{mailto:jayabrata180402@gmail.com}{jayabrata180402@gmail.com}\\
  \vspace{2pt}
-  \href{https://jayabratapramanik.me/}{Portfolio: jayabratapramanik.me} & Mobile:~~~+91-9091392947 \\
-  \href{https://github.com/Jayabrata18/}{\normalsize Github: ~~github.com/Jayabrata18}  & \href {https://twitter.com/Jayabrata22/}{Twitter: jayabrata22}\\
+  \href{https://jayabratapramanik.me/}{Portfolio: jayabratapramanik.me} & Mobile: +91-9091392947 \\
+  \href{https://github.com/Jayabrata18/}{\large Github: github.com/Jayabrata18}  & \href{https://twitter.com/Jayabrata22/}{Twitter: @jayabrata22}\\
   \href{https://leetcode.com/jayabrata18/}{LeetCode: jayabrata18} & \href{https://www.linkedin.com/in/jayabrata-pramanik/}{Linkedin: Jayabrata Pramanik}
-  
 \end{tabular*}
 
 %-----------EDUCATION-----------------
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {\normalsize Techno Main SaltLake }{Kolkata, India}
-      {\normalsize  Bachelor of Technology - Electronic and Communication Engineering;  CGPA: 9.27}{November 2020 - July 2024}
-      {\scriptsize \textit{ \large {\newline{}\textbf{Courses:} Digital Signal processing, Analog Communication, Digital Communication, Digital Circuits, Network Theory, Operating Systems, Data Structures, Analysis Of Algorithms, Machine Learning, Computer Networks, Object-Orient-programming, DBMS, ITC.}}}
-    \resumeSubHeadingListEnd
-	    
+\resumeSubHeadingListStart
+\resumeSubheading
+{\normalsize Techno Main SaltLake (CGPA: 8.48)}{Kolkata, India}
+{\normalsize Bachelor of Technology - Electronics and Communication Engineering}{November 2020 - July 2024}
+{\scriptsize \textit{ \large {\newline{}\textbf{Courses:} Digital Signal Processing, Analog Communication, Digital Communication, Digital Circuits, Network Theory, Operating Systems, Data Structures and Algorithms, Analysis Of Algorithms, Machine Learning, Computer Networks, Object-Oriented Programming, DBMS, ITC.}}}
+\resumeSubHeadingListEnd
+
 \vspace{-12pt}
 \section{Skills Summary}
-	\resumeSubHeadingListStart
-	\resumeSubItem{\large Languages}{\large~~~~~~Python, JavaScript,Typescript, Java, GO, Solidity, Rust}
-	\vspace{3pt}
-	\resumeSubItem{\large Frameworks}{\large~~~~React, React Native, Nextjs, Three.js, Web3.js, Ether.js, Tailwindcss, Express, Sanity.io, Firebase, Django, Nodejs, GraphQL, Redis}
-	\vspace{3pt}
-	\resumeSubItem{\large Tools}{\large~~~~~~~~~~~~~ Docker, Kubernetes, Git, Github Actions, MongoDB, PostgreSQL, MySQL, Ganache, jenkins}
-		\vspace{3pt}
-	\resumeSubItem{\large Platforms}{\large~~~~~~~Linux, Windows, Arduino, AWS, Azure}
-		\vspace{3pt}
-    \resumeSubHeadingListEnd
-    \vspace{-12pt}
+\resumeSubHeadingListStart
+\resumeSubItem{\large Languages}{\large~~~~~~~Python, JavaScript, TypeScript, Java, GO, Solidity, Rust}
+\vspace{3pt}
+\resumeSubItem{\large Frameworks}{\large~~~~~React, React Native, Next.js, Three.js, Web3.js, Ether.js, Tailwindcss, Express, Sanity.io, Firebase, Django, Nodejs, GraphQL, Redis}
+\vspace{3pt}
+\resumeSubItem{\large Tools}{\large~~~~~~~~~~~~~Docker, Kubernetes, Git, GitHub Actions, MongoDB, PostgreSQL, MySQL, Ganache, Jenkins}
+\vspace{3pt}
+\resumeSubItem{\large Platforms}{\large~~~~~~~~Linux, Windows, Arduino, AWS, Azure}
+\vspace{3pt}
+\resumeSubHeadingListEnd
+\vspace{-12pt}
 
 %-----------PROJECTS-----------------
-
 \section{Projects}
 \resumeSubHeadingListStart
 \vspace{6pt}
-\resumeSubItem{\large Microservices-based E-commerce Website}{\large Developed a robust and scalable microservices-based e-commerce website using Node.js and Express. The project involved implementing customer, product, shopping and an admin section.Utilized Express to handle routing and create a clean API interface.Integrated MongoDB as the database for secure and efficient data storage. Configured NGINX as a reverse proxy to handle routing complexities. Containerized the application using Docker for simplified deployment and scalability. Implemented RabbitMQ as a message queue for efficient communication between microservices. Deployed the application on AWS Elastic Beanstalk for high availability and scalability.Utilized GitHub Actions for continuous integration and continuous deployment (CI/CD) pipeline.Tech:NGINX, RabbitMQ,AWS Elastic Beanstalk, Nodejs, Express, GitHub Actions, MongoDB}\href{https://github.com/Jayabrata18/microservice-project}{\normalsize Link to Github \faExternalLink}
+\resumeSubItem{\large Microservices-based E-commerce Website Backend}{\large Developed a robust and scalable microservices-based e-commerce website using Node.js and Express. The project involved implementing customer, product, shopping, and an admin section. Utilized Express to handle routing and create a clean API interface. Integrated MongoDB as the database for secure and efficient data storage. Configured NGINX as a reverse proxy to handle routing complexities. Containerized the application using Docker for simplified deployment and scalability. Implemented RabbitMQ as a message queue for efficient communication between microservices. Deployed the application on AWS Elastic Beanstalk for high availability and scalability. Utilized GitHub Actions for continuous integration and continuous deployment (CI/CD) pipeline. Tech: NGINX, RabbitMQ, AWS Elastic Beanstalk, Nodejs, Express,GitHub Actions,MongoDB}\href{https://github.com/Jayabrata18/microservice-project}{\normalsize Link to Github \faExternalLink}
 \vspace{5pt}
-\resumeSubItem{\large Ecommerce-Website}{\large This is a full stack ecommerce website where user can sign-up and sign-in with mails and Google-auth.Merchant can add multiple images and details related to product.User can review and giver star rating on products.Tech: React, Redux, nodejs, Express, MongoDB}\href{https://github.com/Jayabrata18/ecommerce-website}{\normalsize Link to Github \faExternalLink}
+\resumeSubItem{\large E-commerce Website}{\large This is a full-stack e-commerce website where users can sign up and sign in with emails and Google Auth. Merchants can add multiple images and details related to products. Users can review and give star ratings to products. Tech: React, Redux, Nodejs, Express, MongoDB}\href{https://github.com/Jayabrata18/ecommerce-website}{\normalsize Link to Github \faExternalLink}
 \vspace{5pt}
-\resumeSubItem{\large Ecommerce-website-backend}{\large This is a backend code of previous ecommerce website. I added here docker-file and dockerconfig-file and made CI/CD pipeline with Travis-ci. I uploaded the api to Google Cloud. Tech: Nodejs, Express, MongoDB, Travis-ci, Docker, YAML}\href{https://github.com/Jayabrata18/ecommerce-website-backend}{\normalsize Link to Github \faExternalLink}
+\resumeSubItem{\large Doctor Booking and Video Consulting Website}{\large This is a full-stack website where users can book doctor appointments and receive video call links at the scheduled time. Tech: React, Axios, Material-UI, Nodejs, Express, MongoDB, Socket.io}\href{https://github.com/Jayabrata18/mlh_diversion2k23_hackathon}{\normalsize Link to Github \faExternalLink}
 \vspace{5pt}
-\resumeSubItem{\large Doctor Booking and Video Consulting website}{\large This is a full stack website where any user can book a doctors appointment and get the video call link on booked time slot. Tech: react, axios, material.ui, node, express, MongoDB, socket.io}\href{https://github.com/Jayabrata18/mlh_diversion2k23_hackathon}{\normalsize Link to Github \faExternalLink}
+\resumeSubItem{\large Music App}{\large This is a basic music player app that first requests storage permission and then plays music from your device storage. Users can create custom libraries and save playlists. Tech: React Native (Expo)}\href{https://github.com/Jayabrata18/music-controlller-expo}{\normalsize Link to Github \faExternalLink}
 \vspace{5pt}
-
-\resumeSubItem{\large Music App}{\large This is a basic music player app where it first takes your phones storage permission and then plays music from your storage. One can create custom library and save it. Tech: React-Native-Expo}\href{https://github.com/Jayabrata18/music-controlller-expo}{\normalsize Link to Github \faExternalLink}
+\resumeSubItem{\large Frontend Clone}{\large Cloned the Zomato website (2020 edition) and cred.club website. Implemented animated hamburger icons, window structure, and animate-on-scroll functionality. Tech: React and CSS}\href{https://github.com/Jayabrata18/zomato-clone}{\normalsize Link to Github \faExternalLink}
 \vspace{5pt}
-\resumeSubItem{\large Ecommerce App}{\large This is a full stack ecommerce app where user can sign-up and sign-in.Merchant can add multiple images and details related to product.User can review and giver star rating on products.Tech: React-native-cli, Redux, nodejs, MongoDB}\href{https://github.com/Jayabrata18/React-Native-Ecommerce-App}{\normalsize Link to Github \faExternalLink}
+\resumeSubItem{\large Quiz App}{\large This is a basic quiz app with four available options. Tech: React Native CLI. Questions are fetched from an external API and integrated into the app. Users can participate and receive scores based on 10 questions. Questions do not repeat.}\href{https://github.com/Jayabrata18/Quiz-App}{\normalsize Link to Github \faExternalLink}
 \vspace{5pt}
-\resumeSubItem{\large Website-Clone}{ \large Cloned  zomato website(2020 edition) and cred.club website. Here you can see animation Hamburger icon, window structure, animate on scroll functionality. TECH: React and CSS }\href{https://github.com/Jayabrata18/zomato-clone}{\normalsize Link to Github \faExternalLink}
-\vspace{5pt}
-\resumeSubItem{\large Quiz App}{\large This is a basic quiz app with four available options.Tech: React-native-cli.Questions are taken form external api and integrated with main-project.This is a quiz app where one can participate and get marks based on 10 questions.Questions never repeat.}\href{https://github.com/Jayabrata18/Quiz-App}{\normalsize Link to Github \faExternalLink}
-\vspace{5pt}
-
 \resumeSubHeadingListEnd
 \vspace{-5pt}
 
 %-----------Hackathons-----------------
-\section{Hacathons}
+\section{Hackathons}
 \begin{description}[font=$\bullet$]
-\item {\normalsize participated in various MLH online hackathons won track prizes}
+\item {\normalsize Participated in various MLH online hackathons and won track prizes.}
 \vspace{-5pt}
-\item {\normalsize Attended in person MLH Diversion-2023 in Kolkata}
+\item {\normalsize Attended in-person MLH Diversion-2023 in Kolkata.}
 \vspace{-5pt}
-
 \end{description}
 \vspace{-5pt}
-{}{last updated on 10/06/2023}
-
+{\hfill \textit{Last updated on 10/08/2023}}
 \end{document}
